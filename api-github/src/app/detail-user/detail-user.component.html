@@ -1,0 +1,12 @@
+<button class ="class" (click)="navigateToHome()" value ="toHome">retour a la page d'accueil</button>
+<div>
+  <p>{{user?.login}}</p>
+  <p>{{user?.type}}</p>
+  <p>{{user?.company}}</p>
+  <p>{{user?.location}}</p>
+  <p>{{user?.bio}}</p>
+  <img src="{{user?.avatar_url}}" alt="" width="100px">
+</div>
+<button class ="class" (click)="navigateToRepos()" value ="toRepos">Repository</button>
+<button class ="class" (click)="navigateToFollowers()" value ="toFolowers">Followers</button>
+<router-outlet></router-outlet>
