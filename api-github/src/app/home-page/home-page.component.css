@@ -1,0 +1,9 @@
+.home_container{
+    width: auto;
+    display:flex;
+    padding : 10px;
+    margin : auto;
+    background-color : whitesmoke;
+    align-items: center;
+    justify-content: center;
+}

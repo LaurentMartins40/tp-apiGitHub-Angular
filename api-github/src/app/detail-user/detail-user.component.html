@@ -1,12 +1,17 @@
-<button class ="class" (click)="navigateToHome()" value ="toHome">retour a la page d'accueil</button>
-<div>
-  <p>{{user?.login}}</p>
-  <p>{{user?.type}}</p>
-  <p>{{user?.company}}</p>
-  <p>{{user?.location}}</p>
-  <p>{{user?.bio}}</p>
-  <img src="{{user?.avatar_url}}" alt="" width="100px">
+<button class="class" (click)="navigateToHome()" value="toHome">retour a la page d'accueil</button>
+<div class="infos">
+  <div class="contenu">
+    <p>{{user?.login}}</p>
+    <p>{{user?.type}}</p>
+    <p>{{user?.company}}</p>
+    <p>{{user?.location}}</p>
+  </div>
+  <div class="image">
+    <img src="{{user?.avatar_url}}" width="100%">
+  </div>
 </div>
-<button class ="class" (click)="navigateToRepos()" value ="toRepos">Repository</button>
-<button class ="class" (click)="navigateToFollowers()" value ="toFolowers">Followers</button>
+<p style="text-align:center">{{user?.bio}}</p>
+
+<button class="selecteurs" (click)="navigateToRepos()" value="toRepos">Repository</button>
+<button class="selecteurs" (click)="navigateToFollowers()" value="toFolowers">Followers</button>
 <router-outlet></router-outlet>

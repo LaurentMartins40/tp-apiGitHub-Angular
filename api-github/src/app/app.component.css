@@ -1,0 +1,9 @@
+.page_container{
+    width: 500px;
+    display:flex;
+    padding : 10px;
+    margin : auto;
+    background-color : rgba(245, 245, 245, 0.7);
+    align-items: center;
+    justify-content: center;
+}
