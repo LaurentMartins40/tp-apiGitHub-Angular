@@ -9,6 +9,7 @@ import { ReposComponent } from './repos/repos.component';
 import { FollowersComponent } from './followers/followers.component';
 import { RouterModule } from '@angular/router';
 import { ROUTES } from './app.routes';
+import { HomeErrorComponent } from './home-error/home-error.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ROUTES } from './app.routes';
     HomePageComponent,
     DetailUserComponent,
     ReposComponent,
-    FollowersComponent
+    FollowersComponent,
+    HomeErrorComponent
   ],
   imports: [
     BrowserModule,

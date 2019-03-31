@@ -15,7 +15,12 @@ export class DetailUserComponent implements OnInit {
     this.router.navigate([PATH_HOME]);
   }
   ngOnInit() { 
-    this.apiRequestService.getUser(this.route.snapshot.paramMap.get('user')).subscribe((p:any)=>this.user=p)
+    this.apiRequestService.getUser(this.route.snapshot.paramMap.get('user')).subscribe((p:any)=>
+    {
+      this.user=p
+    },(error)=>{
+      this.router.navigate([PATH_HOME , error.status ]);
+    })
   }
   navigateToFollowers(){
     this.router.navigate([PATH_DETAIL,this.route.snapshot.paramMap.get('user'),PATH_DETAIL_FOLLOWERS]);
